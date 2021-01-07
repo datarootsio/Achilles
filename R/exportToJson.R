@@ -102,7 +102,6 @@ exportToJson <- function (connectionDetails,
   initOutputPath(outputPath)
   
   # connect to the results schema
-  connectionDetails$schema = resultsDatabaseSchema
   conn <- DatabaseConnector::connect(connectionDetails)
   
   # generate reports
